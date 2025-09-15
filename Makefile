@@ -17,3 +17,8 @@ build: $(BOOTSTRAP_FILE) $(KERNEL_FILES)
 	dd seek=6 conv=sync if=/dev/zero of=kernel.img bs=512 count=2046
 	# Use -drive for QEMU to specify the image file
 	qemu-system-i386 -drive format=raw,file=kernel.img
+clean:
+	rm -f *.o
+	rm -f *.elf
+	rm -f *.bin
+	rm -f *.img
