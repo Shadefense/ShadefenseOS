@@ -15,4 +15,4 @@ print_char:
 	jmp print_char
 done:
 	ret
-hello_string db 'Hello from the WaveOS kernel!' 0
+hello_string db 'Hello from the ShadefenseOS kernel!' 0

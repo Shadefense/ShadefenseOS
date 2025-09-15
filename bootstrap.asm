@@ -60,7 +60,7 @@ printing_finished:
 	mov dl, 0
 	int 10h
 	ret
-title_string: db 'WaveOS Bootloader', 0
+title_string: db 'ShadefenseOS Bootloader', 0
 message_string: db 'kernel loading...', 0
 load_error_string: db 'Kernel load error', 0
 number_of_sectors_to_load: db 15
